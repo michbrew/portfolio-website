@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Montserrat";
-    src: url('/resources/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
 @font-face {
     font-family: "PlayFair Display";
-    src:url('/resources/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf')
+    src:url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf')
 }
 
 nav {
@@ -90,7 +90,7 @@ ul {
     align-content: center;
     height: 15rem;
     aspect-ratio: 3.5/4.5;
-    background-image: url('/resources/images/Michael.jpeg');
+    background-image: url('../images/Michael.jpeg');
     background-position: cover;
     background-size: contain;
     background-repeat: no-repeat;
