@@ -1,3 +1,3 @@
 # portfolio-website
 
-[Live Site](https://michbrew.github.io/portfolio-website/)
+[Live Site on Github Pages](https://michbrew.github.io/portfolio-website/)
