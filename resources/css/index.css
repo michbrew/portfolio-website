@@ -14,13 +14,24 @@ body {
     background-color: #D56062;
 }
 
-div,
-header {
+#main-content {
+    margin: 0 auto;
+    background-color: #FBF5F3;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45) inset;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 62.5rem;
+}
+
+header, #name, #about-me, #projects, #skills, #contact {
+     
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #FBF7F4;
     border: 1px solid black;
     border-radius: 5px;
-    margin: 1.5rem;
-    background-color: #FBF7F4;
-    max-width: 62.5rem;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45) inset;
 }
 
@@ -60,14 +71,7 @@ ul {
 
 }
 
-#main-content {
-    margin: 0 auto;
-    background-color: #FBF5F3;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45) inset;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-}
+
 
 
 /*navigation section */
@@ -108,11 +112,9 @@ nav li a:visited {
 
 .about-me-section {
     display: inline-flex;
-    justify-items: center;
     align-items: center;
-    border: none;
-    box-shadow: none;
-
+    line-height: 1.5;
+       
 }
 
 #my-image-container {
@@ -120,30 +122,39 @@ nav li a:visited {
     justify-content: center;
     align-content: center;
     height: 15rem;
+    margin: 2.5rem;
     aspect-ratio: 3.5/4.5;
     background-image: url('../images/Michael.jpeg');
     background-position: cover;
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 5px;
-    box-shadow: 0px 4px 8px -2px
+    box-shadow: 0px 4px 8px -2px;
+    
+    
 }
 
 /* projects section */
 
+
+
+
 .projects-container {
-    display: inline-flex;
-    border: 2px solid red;
-    margin: 0 auto;
-    padding: 0;
+    
+ display: inline-flex;
+ justify-content: center;
+ max-width: 100%;
+    
 }
 
 .projects-container p {
-    font-size: 1rem;
-    font-family: "Montserrat", Verdana, sans-serif;
-    border: 1px solid black;
-    padding: 0.5rem;
-    line-height: 1;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-family: "PlayFair Display", Helvetica, sans-serif;
+    padding: 1rem;
+    
+    
+    
 }
 
 
@@ -157,13 +168,34 @@ nav li a:visited {
 
 }
 
-#project-1-container,
-#project-2-container {
-    border: 3px solid pink;
-    padding: 0px;
-    margin: 0 auto;
+.projects ul a {
+    text-decoration: none;
+    color: black;
+    padding: .25rem;
+    border-radius: 2px;    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(35, 31, 32, 0.7)  0px 0px 0px 2px;
 }
 
+#project-1-container, #project-2-container {
+    min-width: 50%;
+    border: 0.25px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: .75rem;
+    
+}
+
+
+#myBtn-1, #myBtn-2 {
+    font-family: "Montserrat", Verdana, sans-serif;
+    font-size: .75rem;
+    font-weight: 600;
+    background-color: #FBF5F3;
+    border-radius: 5px;
+}
+
+#more-1, #more-2 {
+    display: none;
+}
 /* skills section */
 
 
@@ -196,13 +228,21 @@ nav li a:visited {
 
 /* responsive design section */
 
-@media only screen and (min-width: 150px) and (max-width: 349px) {
+
+    
+
+
+
+@media screen and (max-width: 359px) {
     html {
-        font-size: 5px;
+        font-size: 6px;
+    }
+    #my-image-container {
+        display: none;
     }
 }
 
-@media only screen and (min-width: 350px) and (max-width: 500px) {
+@media only screen and (min-width: 360px) and (max-width: 500px) {
     html {
         font-size: 8px;
     }

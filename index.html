@@ -7,6 +7,7 @@
     <title>Michael Brewington</title>
     <link rel="icon" type="image/x-icon" href="resources/images/face-smile-regular.svg">
     <link href="resources/css/index.css" rel="stylesheet">
+    <script src="resources/main.js" async></script>
 
 </head>
 
@@ -24,7 +25,7 @@
 
         <div>
 
-            <h1>Michael Brewington</h1>
+            <h1 id="name">Michael Brewington</h1>
 
         </div>
 
@@ -51,25 +52,25 @@
                 <div id="project-1-container">
                     <h3>Ski Club Website</h3>
                     
-                    <p>This project was completed as part of the "Web Development Foundations" unit, focusing on
+                    <p>This project was completed as part of the "Web Development Foundations" unit<span id="dots-1">..</span><span id="more-1">, focusing on
                         responsive design. It provided an opportunity to work with CSS Grid and Flexbox, allowing me to
-                        experiment with various layouts.</p>
-                    <ul class="view-my-work">
+                        experiment with various layouts.</span><button onclick="hide1()" id="myBtn-1">More &#62; &#62;</button></p>
+                        
+                    <ul>
                         <li>#HTML</li>
                         <li>#CSS</li>
-                        <li><a href="https://michbrew.github.io/ski-club/" target="_blank">Live Site</a></li>
-                        <li><a href="https://github.com/michbrew/ski-club" target="_blank">Code</a></li>
+                        <li><a href="https://michbrew.github.io/ski-club/" title="Github Page Live Site" target="_blank">Live Site</a></li>
+                        <li><a href="https://github.com/michbrew/ski-club" title="Github Repository" target="_blank">Code</a></li>
                     </ul>
                 </div>
                 <div id="project-2-container">
                     <h3>Dad Joke Generator</h3>
-                    <p>This project, titled "Mixed Messages," was part of the JavaScript Syntax unit. Its purpose is to
-                        return a truly random message each time, composed of three random parts. This project allowed me
-                        to practice JavaScript and version control with GitHub. It is still a work in progress.</p>
+                    <p>This project, titled "Mixed Messages," was part of the JavaScript Syntax unit.<span id="dots-2">..</span><span id="more-2"> Its purpose is to
+                        return a truly random message each time, composed of three random parts. This project allowed me to practice JavaScript and version control with GitHub. It is still a work in progress.</span><button onclick="hide2()" id="myBtn-2">More &#62; &#62;</button></p>
                     <ul>
                         <li>#JavaScript</li>
                         <li>#Github</li>
-                        <li><a href="https://github.com/michbrew/portfolio_project_javascript" target="_blank">Code</a>
+                        <li><a href="https://github.com/michbrew/portfolio_project_javascript" title="Github Repository" target="_blank">Code</a>
                         </li>
                     </ul>
                 </div>
